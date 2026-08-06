@@ -1,3 +1,6 @@
 [project]
-name = "util"
+name = "py-token-bucket-rate-limiter"
 version = "0.1.0"
+
+[tool.setuptools]
+py-modules = ["token_bucket"]

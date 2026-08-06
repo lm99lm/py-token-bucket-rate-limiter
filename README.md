@@ -1,8 +1,9 @@
 # In-memory token-bucket rate limiter
 
-A small, time-injectable token-bucket rate limiter — no Redis, no dependencies. No dependencies, no service to run — just the standard library.
+A small, time-injectable token-bucket rate limiter — no Redis, no dependencies. It runs on the Python standard library alone; there's no service or package to install.
 
 ```
 token_bucket.py
 ```
-See the test next to the source for usage.
+
+Run the Python Token Bucket Rate Limiter test alongside the implementation for concrete examples.
