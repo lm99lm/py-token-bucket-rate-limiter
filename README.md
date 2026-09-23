@@ -1,9 +1,10 @@
 # In-memory token-bucket rate limiter
 
-A small, time-injectable token-bucket rate limiter — no Redis, no dependencies. It runs on the Python standard library alone; there's no service or package to install.
+`bucket = TokenBucket(rate=10, capacity=10, clock=time.monotonic)`
+
+This uses only the Python standard library. No Redis. No external dependencies. The main gotcha in ETL pipelines is mocking time during integration tests. Injecting the clock function solves this. You can advance time manually without blocking.
 
 ```
 token_bucket.py
 ```
-
-Run the Python Token Bucket Rate Limiter test alongside the implementation for concrete examples.
+Run the test suite next to the implementation for concrete examples.
